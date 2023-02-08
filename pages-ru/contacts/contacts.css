@@ -1,0 +1,266 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #233564;
+    box-sizing: border-box; 
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  #header {
+    background: #fff;
+    position: relative;
+    border-bottom: 2px solid #d3d6e1;
+  }
+  
+  .header-top-wrapper {
+    background: #2b5995;
+    z-index: 3;
+    position: fixed; 
+    top:0;
+    width:100%;  
+    transition: All .5s ease;
+    -webkit-transition: All .5s ease;
+    -moz-transition: All .5s ease;
+    -o-transition: All .5s ease;
+    border-bottom: 1px solid #d3d6e1; 
+  }
+  
+  .header-top {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+  }
+  
+  .header-top-contact-item {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  
+  .header-top-contact-item i {
+    margin-right: 10px;
+  }
+  
+  .logo {
+    width: 270px;
+    height: 70px;
+    color: #15295b;
+    transition: All .5s ease;
+    -webkit-transition: All .5s ease;
+    -moz-transition: All .5s ease;
+    -o-transition: All .5s ease;
+  }
+  
+  .header-nav {
+    background-color: #fff;
+    transition: 0.4s; /* Добавить эффект перехода при уменьшении заполнения*/
+    position: fixed; /* Липкая/фиксированная навигационная панель */
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    right: 0; 
+    border-bottom: 1px solid #d3d6e1;
+  }
+  
+  .nav-toggle span {
+    display: block;
+    height: 3px;
+    margin-top: 3px;
+    background: #15295b;
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+  
+  .nav-toggle {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;  
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    padding: 0px 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 30px 0px 10px; /* Большой отступ, который будет сжиматься при прокрутке (с помощью JS) */
+  }
+  
+  .navigation-collapse {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation-item {
+    padding-right: 50px;
+    padding-top: 30px;
+  }
+  
+  .navigation-item a {
+    display: block;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #233564;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0px;
+  }
+  
+  .navigation-item a:hover {
+    border-bottom: 3px solid #2b5995;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  
+  
+  .contacts-wrapper {
+    padding: 130px 30px 30px;
+  }
+
+  .contacts {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+
+  
+  .footer-wrapper {
+    background-color: #fff;
+    padding: 20px 30px 0px;
+  }
+  
+  .footer-info-top {
+    font-size: 18px;
+    display: flex;
+    justify-content: left;
+  }
+  .footer-info-bottom {
+    font-size: 14px;
+  }
+  
+  .footer-info-bottom p {
+    margin: 3px;
+  }
+  
+  .footer {
+    text-align: right;
+    color: #233564;
+  }
+  
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-info p {
+    margin: 5px;
+    text-align: left;
+  }
+  
+  .menu-mobile {
+    display: none;
+  }
+  
+  /*Меню наложения*/
+  /* Наложение (фон) */
+  .menu {
+    /* Высота и ширина зависят от того, как вы хотите показать наложение (см. JS ниже) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    background-color: #2b5995; /* Черный резервный цвет */
+    background-color: rgba(43, 89, 149, 0.9); /* Черный с непрозрачностью */
+    overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+    transition: 0.5s; /* 0.5 секунды эффект перехода, чтобы скользить в или скользить вниз по наложению (высота или ширина, в зависимости от показа) */
+  }
+  
+  .menu-item {
+    border-bottom: 2px solid #233564;
+  }
+  
+  /* Расположите содержимое внутри наложения */
+  .menu-mobile-content {
+    position: relative;
+    top: 25%; /* 25% с самого начала */
+    width: 100%; /* 100% width */
+    text-align: left; /* Центрированный текст/ссылки */
+    margin-top: 30px; /* 30px верхнее поле, чтобы избежать конфликта с кнопкой закрытия на небольших экранах */
+  }
+  
+  .menu-mobile-content ul {
+    list-style-type: none;
+  }
+  /* Навигационные ссылки внутри наложения */
+  .menu a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    display: block; /* Блок дисплея вместо встроенного */
+    transition: 0.3s; /* Эффекты перехода при наведении (цвет) */
+  }
+  
+  /* При наведении курсора мыши на навигационные ссылки измените их цвет */
+  .menu a:hover,
+  .menu a:focus {
+    color: #233564;
+  }
+  
+  /* Расположите кнопку закрыть (верхний правый угол) */
+  .closebtn {
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 125px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media (min-width: 768px) and (max-width: 1041px) {
+    .header-top  {
+      height: 32px;
+    }
+  }
+  
+  /* Если высота экрана меньше 450 пикселей, измените размер шрифта ссылок и снова установите кнопку закрыть, чтобы они не перекрывались */
+  @media screen and (max-height: 450px) {
+    .menu a {
+      font-size: 20px;
+    }
+    .menu .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
