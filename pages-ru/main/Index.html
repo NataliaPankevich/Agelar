@@ -11,10 +11,11 @@
   <!--<base href="https://">
   <link rel="canonical" href="https://www.agelar.com/ru">-->
   <!--FONTS-->
-  <link
-    href="//fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext"
-    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
   <!--CSS STYLES-->
+  <link rel="stylesheet" href="./normalize.css">
   <link rel="stylesheet" href="./Index.css" />
   <!--<link rel="alternate" hreflang="pl" href="" />
   <link rel="alternate" hreflang="en" href="" />
@@ -28,8 +29,6 @@
 <body>
   <div class="page-wrapper">
 
-
-
     <header id="header" class="header">
 
       <div id="header-top" class="header-top-wrapper">
@@ -40,9 +39,9 @@
           </div>
           <div>
             <select>
-              <option><a href="#">Ru</a></option>
-              <option><a href="#">Pl</a></option>
-              <option><a href="#">En</a></option>
+              <option selected><a href="./Index.html">Ru</a></option>
+              <option><a href="../../pages-pl/main/index.html">Pl</a></option>
+              <option><a href="../../pages-en/main/index.html">En</a></option>
             </select>
           </div>
         </div>
@@ -53,17 +52,15 @@
 
           <div id="navigation" class="navigation">
             <div>
-              <a href="../main/Index.html"><img id="logo" class="logo" src="../../images/logo1.png" alt="AGELAR Sp.z.o.o."
-                  title="" /></a>
+              <a href="../main/Index.html"><img id="logo" class="logo" src="../../images/logo1.png"
+                  alt="AGELAR Sp.z.o.o." title="" /></a>
             </div>
 
-
-              <div class="navigation-button">
+            <div class="navigation-button">
               <button onclick="openNav()" type="button" class="nav-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
-
               </button>
             </div>
 
@@ -105,62 +102,72 @@
         <div class="services">
 
           <div class="services-item">
-            <div>
-              <p>Международные перевозки</p>
-              <p></p>
-              <div class="services-item-lines">
-                <a href="./services.html"><i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+            <div class="services-item-text">
+              <h3>МЕЖДУНАРОДНЫЕ ПЕРЕВОЗКИ</h3>
+              <div class="services-item-icon"><i class="fa-solid fa-globe"></i></div>
+              <ul>
+                <li>Профессиональные услуги в области транспорта по всему ЕС.</li>
+                <li>Расчет стоимости за 1 час!</li>
+              </ul>
+            </div>
+            <div class="services-item-link">
+              <a href="../services/services.html"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
           </div>
           <div class="services-item">
-            <div>
-              <p>Сборные грузы</p>
-              <p></p>
-              <div class="services-item-lines">
-                <a href="./services.html"><i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+            <div class="services-item-text">
+              <h3>СБОРНЫЕ ГРУЗЫ</h3>
+              <div class="services-item-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+              <ul>
+                <li>Финансовая доступность.</li>
+                <li>Cтоимость доставки зависит только от занимаемого грузом пространства.</li>
+              </ul>
+
+            </div>
+            <div class="services-item-link">
+              <a href="../services/services.html"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
           </div>
           <div class="services-item">
-            <div>
-              <p>Экспедирование</p>
-              <p></p>
-              <div class="services-item-lines">
-                <a href="./services.html"><i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+            <div class="services-item-text">
+              <h3>ЭКСПЕДИРОВАНИЕ</h3>
+              <div class="services-item-icon"><i class="fa-solid fa-route"></i></div>
+              <ul>
+                <li>Личный менеджер 24/7 и индивидуальный подход к каждому клиенту!</li>
+              </ul>
+
+            </div>
+            <div class="services-item-link">
+              <a href="../services/services.html"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
           </div>
 
         </div>
 
-
-
       </div>
       <div class="services-buttons">
         <div><button><i class="fa-solid fa-phone-flip"></i></button></div>
         <div><button><i class="fa-solid fa-envelope"></i></button></div>
       </div>
-
     </main>
 
-    <hr/>
+    <hr />
 
     <footer class="footer-wrapper">
       <div class="footer">
         <div class="footer-info container">
           <div class="footer-info-top">
-            <div>
+            <div class="footer-info-top-child">
               <p><b>AGELAR Sp.z.o.o.</b></p>
               <p>ul. Stefana Okrzei 1A </p>
               <p>lok. 10P 03-715 </p>
               <p>Warszawa, Poland</p>
 
             </div>
-            <div>
+            <div class="footer-info-top-child">
               <p><b>Kontakt</b></p>
               <p>tel. +48 725 814 031</p>
               <p>e-mail: p.cargo.pank@gmail.com</p>
@@ -175,18 +182,13 @@
           <p>2017-2022 ©Agelar. All rights reserved.</p>
         </div>
       </div>
-    </footer>   
-
-
-
-
-    <!-- Верхний слой -->
+    </footer>
+   
     <div class="menu-mobile-wrapper">
       <nav id="mobile-menu" class="menu ">
-        <!-- Кнопка для закрытия навигации наложения -->
+     
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
 
-        <!-- Верхний слой содержимого -->
         <div class="menu-mobile-content">
           <ul class="" role="menu" style="width: calc(100%+17px)">
             <li class="menu-item" role="menuitem">

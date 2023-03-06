@@ -63,8 +63,8 @@ body {
 
 .header-nav {
   background-color: #fff;
-  transition: 0.4s; /* Добавить эффект перехода при уменьшении заполнения*/
-  position: fixed; /* Липкая/фиксированная навигационная панель */
+  transition: 0.4s;
+  position: fixed;
   width: 100%;
   z-index: 2;
   left: 0;
@@ -101,13 +101,18 @@ body {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  padding: 30px 0px 10px; /* Большой отступ, который будет сжиматься при прокрутке (с помощью JS) */
+  padding: 30px 0px 10px;
+}
+
+.navigation-button {
+  display: none;
 }
 
 .navigation-collapse {
   display: flex;
   justify-content: space-between;
 }
+
 .navigation-item {
   padding-right: 50px;
   padding-top: 30px;
@@ -127,6 +132,8 @@ body {
   border-bottom: 3px solid #2b5995;
   transition: 0.2s;
 }
+
+
 
 .about-info-wrapper {
   background-color: #2b5995;
@@ -154,41 +161,43 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  -moz-transform: rotate(-90deg); /* Для Firefox */
-  -ms-transform: rotate(-90deg); /* Для IE */
-  -webkit-transform: rotate(-90deg); /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(-90deg); /* Для Opera */
+  -moz-transform: rotate(-90deg);
+  /* Для Firefox */
+  -ms-transform: rotate(-90deg);
+  /* Для IE */
+  -webkit-transform: rotate(-90deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-90deg);
+  /* Для Opera */
   transform: rotate(-90deg);
   transform-origin: 23px 54%;
-  min-width: 500px; 
+  min-width: 500px;
 }
+
 .about-info-title p {
   margin: 10px 50px;
 }
 
 .about-info-text {
   font-size: 16px;
-  padding:140px 50px 110px;
+  padding: 120px 50px 15px;
   background-color: #fff;
   border: 1px solid black;
 }
 
+.about-info-text ul {
+  margin-top: 0px;
+  border: 1px solid black;
+}
+
+hr {
+  margin: 0px;
+}
+
+
 .footer-wrapper {
   background-color: #fff;
   padding: 20px 30px 0px;
-}
-
-.footer-info-top {
-  font-size: 18px;
-  display: flex;
-  justify-content: left;
-}
-.footer-info-bottom {
-  font-size: 14px;
-}
-
-.footer-info-bottom p {
-  margin: 3px;
 }
 
 .footer {
@@ -202,63 +211,79 @@ body {
 }
 
 .footer-info p {
-  margin: 5px;
+  margin: 0px;
   text-align: left;
 }
+
+.footer-info-top {
+  font-size: 18px;
+  display: flex;
+  justify-content: left;
+}
+
+.footer-info-top-child {
+  margin-right: 50px;
+}
+
+.footer-info-bottom {
+  font-size: 14px;
+}
+
+.footer-info-bottom p {
+  margin: 2px;
+}
+
+
+
 
 .menu-mobile {
   display: none;
 }
 
-/*Меню наложения*/
-/* Наложение (фон) */
+
 .menu {
-  /* Высота и ширина зависят от того, как вы хотите показать наложение (см. JS ниже) */
   height: 100%;
   width: 0;
-  position: fixed; /* Оставаться на месте */
-  z-index: 1; /* Сидеть на вершине */
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  background-color: #2b5995; /* Черный резервный цвет */
-  background-color: rgba(43, 89, 149, 0.9); /* Черный с непрозрачностью */
-  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
-  transition: 0.5s; /* 0.5 секунды эффект перехода, чтобы скользить в или скользить вниз по наложению (высота или ширина, в зависимости от показа) */
+  background-color: #2b5995;
+  background-color: rgba(43, 89, 149, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
 .menu-item {
   border-bottom: 2px solid #233564;
 }
 
-/* Расположите содержимое внутри наложения */
 .menu-mobile-content {
   position: relative;
-  top: 25%; /* 25% с самого начала */
-  width: 100%; /* 100% width */
-  text-align: left; /* Центрированный текст/ссылки */
-  margin-top: 30px; /* 30px верхнее поле, чтобы избежать конфликта с кнопкой закрытия на небольших экранах */
+  top: 25%;
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
 }
 
 .menu-mobile-content ul {
   list-style-type: none;
 }
-/* Навигационные ссылки внутри наложения */
+
 .menu a {
   padding: 8px;
   text-decoration: none;
   font-size: 30px;
   color: #fff;
-  display: block; /* Блок дисплея вместо встроенного */
-  transition: 0.3s; /* Эффекты перехода при наведении (цвет) */
+  display: block;
+  transition: 0.3s;
 }
 
-/* При наведении курсора мыши на навигационные ссылки измените их цвет */
 .menu a:hover,
 .menu a:focus {
   color: #233564;
 }
 
-/* Расположите кнопку закрыть (верхний правый угол) */
 .closebtn {
   color: #fff;
   position: absolute;
@@ -268,17 +293,29 @@ body {
   font-size: 60px;
 }
 
+
+@media all and (max-width:950px) {
+  .navigation-button {
+    display: block;
+  }
+
+  .navigation-collapse {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1041px) {
   .header-top {
     height: 32px;
   }
 }
 
-/* Если высота экрана меньше 450 пикселей, измените размер шрифта ссылок и снова установите кнопку закрыть, чтобы они не перекрывались */
+
 @media screen and (max-height: 450px) {
   .menu a {
     font-size: 20px;
   }
+
   .menu .closebtn {
     font-size: 40px;
     top: 15px;

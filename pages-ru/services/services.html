@@ -11,17 +11,14 @@
   <!--<base href="https://">
   <link rel="canonical" href="https://www.optimalg.com/ru">-->
   <!--FONTS-->
-  <link
-    href="//fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <!--CSS STYLES-->
   <link rel="stylesheet" href="./services.css" />
   <!--<link rel="alternate" hreflang="pl" href="" />
   <link rel="alternate" hreflang="en" href="" />
   <link rel="alternate" hreflang="ru" href="" />
   <link rel="alternate" hreflang="x-default" href="" />-->
-
-  <script src="https://kit.fontawesome.com/73765b97f3.js" crossorigin="anonymous"></script>
+  
 </head>
 
 <body>
@@ -35,9 +32,9 @@
           </div>
           <div>
             <select>
-              <option><a href="#">Ru</a></option>
-              <option><a href="#">Pl</a></option>
-              <option><a href="#">En</a></option>
+              <option selected><a href="./Index.html">Ru</a></option>
+              <option><a href="../../pages-pl/main/index.html">Pl</a></option>
+              <option><a href="../../pages-en/main/index.html">En</a></option>
             </select>
           </div>
         </div>
@@ -51,7 +48,6 @@
                   alt="AGELAR Sp.z.o.o." title="" /></a>
             </div>
 
-            <!-- Используйте любой элемент для открытия/отображения меню навигации наложения -->
             <div class="navigation-button">
               <button onclick="openNav()" type="button" class="nav-toggle">
                 <span></span>
@@ -244,13 +240,13 @@
       <div class="footer">
         <div class="footer-info container">
           <div class="footer-info-top">
-            <div>
+            <div class="footer-info-top-child">
               <p><b>AGELAR Sp.z.o.o.</b></p>
               <p>ul. Stefana Okrzei 1A</p>
               <p>lok. 10P 03-715</p>
               <p>Warszawa, Poland</p>
             </div>
-            <div>
+            <div class="footer-info-top-child">
               <p><b>Kontakt</b></p>
               <p>tel. +48 725 814 031</p>
               <p>e-mail: p.cargo.pank@gmail.com</p>
@@ -266,14 +262,13 @@
       </div>
     </footer>
 
-    <!-- Верхний слой -->
+   
     <div class="menu-mobile-wrapper">
       <nav id="mobile-menu" class="menu">
-        <!-- Кнопка для закрытия навигации наложения -->
+     
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
 
-        <!-- Верхний слой содержимого -->
-        <div class="menu-mobile-content">
+          <div class="menu-mobile-content">
           <ul class="" role="menu" style="width: calc(100%+17px)">
             <li class="menu-item" role="menuitem">
               <a class="menu-link" href="../about/about.html">О компании</a>

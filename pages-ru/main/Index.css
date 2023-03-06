@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'Bruno Ace SC';
+	src: url('../fonts/bruno_ace_sc.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/bruno_ace_sc.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/bruno_ace_sc.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/bruno_ace_sc.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/bruno_ace_sc.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/bruno_ace_sc.svg#bruno_ace_sc') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -109,6 +119,9 @@ body {
   padding: 30px 0px 10px; 
 }
 
+.navigation-button {
+  display:none;
+}
 .navigation-collapse {
   display: flex;
   justify-content: space-between;
@@ -136,24 +149,20 @@ body {
   transition: 0.2s;
 }
 
-
-
-
 .services-wrapper {
-  height: 50vh;
+  height: 57vh;
   background-image: url(../../images/main2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 150px 0px 55px;
+  padding: 150px 0px 25px;
   position: relative;
 }
 
 .services {
-  height: 50vh;
-  border: 1px solid black;
+  height: 55vh;  
   box-sizing: border-box;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; 
 }
 .services-buttons {
   position: absolute;
@@ -171,24 +180,56 @@ body {
 }
 
 .services-item {
-  background-color: #fff;
-  opacity: 0.5;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, .5);
+  background: linear-gradient(to bottom, #fff, transparent);
+  border:1px solid #2b5995;
   width: 28%;
-  height: 100%;
-  border: 1px solid rgb(221, 221, 221);
-  border-radius: 3px;
+  height: 100%;   
+  font-size: 18px;  
+  padding:25px 15px 15px 15px;
+}
+.services-item h3 {
+  min-height:70px;
+  font-weight: 600;  
+  color: #2b5995;
+  font-size: 25px;
+  text-align: center; 
+  text-shadow: 1px 1px rgb(236, 236, 236);
+  margin:0px 0px 30px 0px ;
+}
+
+.services-item-icon {
   text-align: center;
-  box-shadow: 5px 5px 5px grey;
-  color: #2a3645;
-  font-size: 22px;
-  font-weight: bold;
+  min-height: 50px;
+}
+.services-item-text {
+   min-height:300px;   
 }
 
-.services-item-lines {
-  border-top: 2px solid #233564;
-  border-bottom: 2px solid #233564;
+.services-item-link {
+  margin-top: 20px;  
+  text-align: right;
 }
 
+.fa-arrow-right {
+  color: #2b5995;
+  font-size: 30px;
+}
+
+.fa-globe {
+  color: #2b5995;
+  font-size: 40px;
+}
+
+.fa-boxes-stacked, fa-route {
+  color: #2b5995;
+  font-size: 40px;
+}
+.fa-route {
+  color: #2b5995;
+  font-size: 40px;
+}
 .services-buttons {
   text-align: right;
 }
@@ -197,22 +238,17 @@ body {
   margin-top: 20px;
 }
 
+
+
+
+hr {
+  margin:0px;
+}
+  
+
 .footer-wrapper {
   background-color: #fff;
   padding: 20px 30px 0px;
-}
-
-.footer-info-top {
-  font-size: 18px;
-  display: flex;
-  justify-content: left;
-}
-.footer-info-bottom {
-  font-size: 14px;
-}
-
-.footer-info-bottom p {
-  margin: 3px;
 }
 
 .footer {
@@ -225,23 +261,39 @@ body {
   justify-content: space-between;
 }
 
-.footer-info p {
-  margin: 5px;
+.footer-info p { 
+  margin: 0px;
   text-align: left;
 }
+
+.footer-info-top {
+  font-size: 18px;
+  display: flex;
+  justify-content: left;
+}
+
+.footer-info-top-child {
+  margin-right: 50px;
+}
+
+.footer-info-bottom {
+  font-size: 14px;
+}
+
+.footer-info-bottom p {
+  margin: 2px;
+}
+
 
 .menu-mobile {
   display: none;
 }
 
-/*Меню наложения*/
-/* Наложение (фон) */
 .menu {
-  /* Высота и ширина зависят от того, как вы хотите показать наложение (см. JS ниже) */
   height: 100%;
   width: 0;
-  position: fixed; /* Оставаться на месте */
-  z-index: 1; /* Сидеть на вершине */
+  position: fixed; 
+  z-index: 1; 
   left: 0;
   top: 0;
   background-color: #2b5995; 
@@ -254,35 +306,33 @@ body {
   border-bottom: 2px solid #233564;
 }
 
-/* Расположите содержимое внутри наложения */
 .menu-mobile-content {
   position: relative;
-  top: 25%; /* 25% с самого начала */
-  width: 100%; /* 100% width */
+  top: 25%; 
+  width: 100%; 
   text-align: left; 
-  margin-top: 30px; /* 30px верхнее поле, чтобы избежать конфликта с кнопкой закрытия на небольших экранах */
+  margin-top: 30px; 
 }
 
 .menu-mobile-content ul {
   list-style-type: none;
 }
-/* Навигационные ссылки внутри наложения */
+
 .menu a {
   padding: 8px;
   text-decoration: none;
   font-size: 30px;
   color: #fff;
-  display: block; /* Блок дисплея вместо встроенного */
-  transition: 0.3s; /* Эффекты перехода при наведении (цвет) */
+  display: block; 
+  transition: 0.3s; 
 }
 
-/* При наведении курсора мыши на навигационные ссылки измените их цвет */
 .menu a:hover,
 .menu a:focus {
   color: #233564;
 }
 
-/* Расположите кнопку закрыть (верхний правый угол) */
+
 .closebtn {
   color: #fff;
   position: absolute;
@@ -292,13 +342,22 @@ body {
   font-size: 60px;
 }
 
+@media all and (max-width:950px) {
+  .navigation-button {
+    display:block;
+  }
+  .navigation-collapse {
+    display:none;
+  }  
+}
+
 @media (min-width: 768px) and (max-width: 1041px) {
   .header-top  {
     height: 32px;
   }
 }
 
-/* Если высота экрана меньше 450 пикселей, измените размер шрифта ссылок и снова установите кнопку закрыть, чтобы они не перекрывались */
+
 @media screen and (max-height: 450px) {
   .menu a {
     font-size: 20px;

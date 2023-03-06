@@ -1,4 +1,4 @@
-/* Открыть, когда кто-то нажимает на элемент span */
+
 function openNav() {
     document.getElementById("mobile-menu").style.width = "100%";
   }
