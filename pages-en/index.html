@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--METATAGS-->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Agelar</title>
+
+  <!--<base href="https://www.agelar.pl/">
+  <link rel="canonical" href="https://www.agelar.pl/en">-->
+
+  <!--FONTS-->
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!--CSS STYLES-->
+  <!--<link rel="icon" href="https://agelar.pl/images/favicon/favicon.ico" type="image/x-icon">-->
+  <link rel="stylesheet" href="../normalize/normalize.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/menuMobile.css" />
+  <!--<link rel="alternate" hreflang="pl" href="" />
+  <link rel="alternate" hreflang="en" href="" />
+  <link rel="alternate" hreflang="ru" href="" />
+  <link rel="alternate" hreflang="x-default" href="" />-->
+
+  <script src="https://kit.fontawesome.com/73765b97f3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header id="header" class="header">
+      <div id="header-top" class="header-top-wrapper">
+        <div class="header-top container">
+          <div>
+            <a href="tel:+48 725 814 031" class="header-top-contact-item"><i class="fa-solid fa-phone"></i> +48 725 814
+              031</a>
+            <a href="mailto:info.agelar@gmail.com" class="header-top-contact-item"><i
+                class="fa-regular fa-envelope"></i>info.agelar@gmail.com</a>
+          </div>
+          <div>
+            <select onChange="document.location.href=this.options[this.selectedIndex].value;">
+              <option value="/ru/">Ru</option>
+              <option value="/" selected>Pl</option>
+              <option value="/en/">En</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-nav">
+        <div class="container">
+          <div id="navigation" class="navigation">
+            <div>
+              <a href="./index.html"><img id="logo" class="logo" src="../images/logo1.png" alt="AGELAR Sp.z.o.o."
+                  title="" /></a>
+            </div>
+
+            <div class="navigation-button">
+              <button onclick="openNav()" type="button" class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="navigation-collapse">
+              <div class="navigation-item">
+                <a href="./index.html">Home</a>
+              </div>
+
+              <div class="navigation-item">
+                <a href="./about.html">About us</a>
+              </div>
+
+              <div class="navigation-item">
+                <a href="./services.html">Our Services</a>
+              </div>
+
+              <div class="navigation-item">
+                <a href="./contacts.html">Contact</a>
+              </div>
+
+              <div class="navigation-item">
+                <a href="../documents.html">Documents</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="services-wrapper">
+      <div class="container">
+        <div class="services">
+          <div class="services-item">
+            <div class="services-item-text">
+              <h3>INTERNATIONAL TRANSPORT</h3>
+              <div class="services-item-icon">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <ul>
+                <li>                  
+                  You can benefit from our professional transport and freight forwarding services across UE and middle Asia.
+                </li>
+                <li>Receive a quote within an hour!</li>
+              </ul>
+            </div>
+            <div class="services-item-link">
+              <a href="./services.html"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="services-item">
+            <div class="services-item-text">
+              <h3>GROUPAGE CARGOES</h3>
+              <div class="services-item-icon">
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </div>
+              <ul>
+                <li><mark>Financial accessibility</mark></li>
+                <li>The cost of delivery depends on the space occupied by the cargo.          
+                </li>
+              </ul>
+            </div>
+            <div class="services-item-link">
+              <a href="./services.html"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="services-item">
+            <div class="services-item-text">
+              <h3>FREIGHT FORWARDING</h3>
+              <div class="services-item-icon">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              <ul>
+                <li>
+                  Available 24/7; 
+                </li>
+                <li>
+                  We adopt a flexible and personalised approach to our each Partner.
+                </li>
+                </ul>
+            </div>
+            <div class="services-item-link">
+              <a href="./services.html"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <hr />
+
+
+
+    <footer class="footer-wrapper">
+      <div class="footer">
+        <div class="footer-info container">
+          <div class="footer-info-top">
+            <div class="footer-info-top-child">
+              <div>
+                <p><b>AGELAR Sp.z.o.o.</b></p>
+              <p>ul. Stefana Okrzei 1A</p>
+              <p>lok. 10P 03-715</p>
+              <p>Warszawa, Poland</p>
+              </div>
+              <div>
+                  <p><b>Kontakt</b></p>
+              <p>tel. +48 725 814 031</p>
+              <p>e-mail: info.agelar@gmail.com</p>
+              </div>              
+            </div>           
+            <div class="footer-info-top-child">
+              <div class="footer-buttons">
+                <a title="Telegram" href="https://wa.me/1XXXXXXXXXX"><i class="fa-brands fa-telegram"></i></a>
+                <a title="Whatsapp" href="https://wa.me/293330278"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:info.agelar@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          
+          <div class="footer-info-bottom">
+            <p>2017-2022 ©Agelar. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <div class="menu-mobile-wrapper">
+      <nav id="mobile-menu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+
+        <div class="menu-mobile-content">
+          <ul class="" role="menu">
+            <li class="menu-item" role="menuitem">
+              <a class="menu-link" href="./about.html">About us</a>
+            </li>
+            <li class="menu-item" role="menuitem">
+              <a class="menu-link" href="./services.html">Our Services</a>
+            </li>
+            <li class="menu-item" role="menuitem">
+              <a class="menu-link" href="./contacts.html">Contact</a>
+            </li>
+            <li class="menu-item" role="menuitem">
+              <a class="menu-link" href="./documents.html">Documents</a>
+            </li>
+            <li class="menu-item" role="menuitem">
+              <a class="menu-link" href="#">Get a Quote</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--JS SCRIPTS-->
+    <script src="./js/index.js"></script>
+  </div>
+</body>
+
+</html>

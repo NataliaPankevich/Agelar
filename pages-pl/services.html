@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--METATAGS-->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Agelar</title>
+  <!--<base href="https://">
+  <link rel="canonical" href="https://www.optimalg.com/ru">-->
+  <!--FONTS-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <!--CSS STYLES-->
+  <link rel="stylesheet" href="../normalize/normalize.css">
+  <link rel="stylesheet" href="./css/services.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/menuMobile.css" />
+  <!--<link rel="alternate" hreflang="pl" href="" />
+  <link rel="alternate" hreflang="en" href="" />
+  <link rel="alternate" hreflang="ru" href="" />
+  <link rel="alternate" hreflang="x-default" href="" />-->
+  <script src="https://kit.fontawesome.com/73765b97f3.js" crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header id="header" class="header">
+      <div id="header-top" class="header-top-wrapper">
+        <div class="header-top container">
+          <div>
+            <a href="tel:+48 725 814 031" class="header-top-contact-item"><i class="fa-solid fa-phone"></i> +48 725 814 031</a>
+            <a href="mailto:info.agelar@gmail.com" class="header-top-contact-item"><i class="fa-regular fa-envelope"></i>info.agelar@gmail.com</a>
+          </div>
+          <div>
+            <select>
+              <option selected><a href="./index.html">Ru</a></option>
+              <option><a href="../pages-pl/index.html">Pl</a></option>
+              <option><a href="../pages-en/index.html">En</a></option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-nav">
+        <div class="container">
+          <div id="navigation" class="navigation">
+            <div>
+              <a href="./index.html"><img id="logo" class="logo" src="../images/logo1.png"
+                  alt="AGELAR Sp.z.o.o." title="" /></a>
+            </div>
+
+            <div class="navigation-button">
+              <button onclick="openNav()" type="button" class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="navigation-collapse">
+              <div class="navigation-item">
+                <a href="./index.html">Strona główna</a>
+              </div>
+
+              <div class="navigation-item">
+                <a href="./about.html">O nas</a>
+              </div>
+
+              <div class="navigation-item">
+                <a href="./services.html">Nasza oferta</a>
+              </div>
+
+              <div class="navigation-item">
+                <a href="./contacts.html">Kontakt</a>
+              </div>
+
+              <div class="navigation-item">
+                <a href="./documents.html">Dokumentacja</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="services-wrapper">
+      <div class="services container">
+        <div class="services-nav">
+          <button class="tablink" onclick="openPage('international-cargo', this, '#04ADAD')" id="defaultOpen">
+            MIĘDZYNARODOWY TRANSPORT
+          </button>
+
+          <button class="tablink" onclick="openPage('groupage-cargo', this, '#04ADAD')">
+            ŁADUNEK ZGRUPOWANY
+          </button>
+
+          <button class="tablink" onclick="openPage('forwarding', this, '#04ADAD')">
+            SPEDYCJA
+          </button>
+        </div>
+
+        <div class="services-info">
+
+          <div>
+            <div class="services-info-title">
+              <p>NASZE USŁUGI</p>
+            </div>
+            <div id="international-cargo" class="tabcontent">
+              <div class="services-international-cargo-wrapper">
+                <div class="services-international-cargo-img"></div>
+
+                <div class="services-international-cargo-text">
+                  <ol>
+                    <li>
+                      <p><b>Оперативность доставки грузов.</b></p> <p>Мы являемся профессионалами в области 
+                      транспортировки сборных и комплектных грузов и понимаем потребности бизнеса 
+                      в оптимизации издержек. Точные сроки доставки, гарантия сохранности и разумная 
+                      стоимость фрахтов являются нашими конкурентными преимуществами. Имеется свой собственный автопарк.</p>
+                    </li>
+                    <li>
+                      <p><b>Полный комплекс оказания услуг.</b></p> <p>Компания <b> «Aгелар» </b> является одним из надежных Экспедиторов-перевозчиков, 
+                      предоставляющих полный комплекс автотранспортных услуг как на территории Республики Польша, так и за ее пределами. 
+                      Простота в оформлении Заказчиком договора-заявки на сайте нашей компании, прокладка маршрута, расчет расстояния, 
+                      страхование и GPS-отслеживание перевозимого груза обеспечивает удобство сотрудничества с нами. Наш Заказчик на выходя 
+                      из машины или дома может оформить заказ на транспортные услуги из любой точки мира, и быть с нами на связи.</p>
+                    </li>
+                    <li>
+                    <p><b>Индивидуальный подход к каждому клиенту.</b></p> <p>Основная цель компании заключается в удовлетворении пожеланий заказчика в
+                      сфере грузоперевозок и предоставлении ему услуг в соответствии с его потребностями. Mы уделяем большое внимание компетенции
+                      персонала и стратегии индивидуального подхода к каждому клиенту. Автоматизированная система мониторинга движения транспортного 
+                      средства позволит менеджеру компании определить местоположение груза и точно рассчитать время его доставки до конечного объекта. 
+                      С нами легко и удобно коммуницировать.</p>
+                    </li>
+                    <li>
+                    <p><b>Разумные и гибкие тарифы на перевозку и прочие услуги.</b></p><p>Стратегия предприятия так же захватывает и ценовой сегмент. Среднерыночные
+                      тарифы и скидки для постоянных клиентов позволяют нам создавать наилучшие предложения для наших клиентов. В отличии от наших конкурентов 
+                      мы предоставляем Партнерам выгодные цены при любых форс-мажорных обстоятельствах и ситуациях.</p>  
+                    </li>
+
+                  </ol>
+                  <p> W razie pytań dotyczących naszej oferty prosimy o kontakt:</p>
+                  <p><b>tel.&nbsp+48 725 814 031</b></p>
+                  <p><b>e-mail: info.agelar@gmail.com</b></p>
+                </div>
+              </div>
+            </div>
+
+            <div id="groupage-cargo" class="tabcontent">
+              <div class="services-groupage-cargo-wrapper">
+                <div class="services-groupage-cargo-img"></div>
+
+                <div class="services-groupage-cargo-text">
+                  <p>
+                    <b>ООО «Aгелар» </b> на протяжении длительного времени сотрудничает с крупными и надёжными логистическими
+                    компаниями и перевозчиками из Польши,  Молдовы, Украины, Германии, Италии, Казахстана, Узбекистана 
+                    и Китая. Благодаря этому, наша компания может в максимально короткий срок составить для своего 
+                    Клиента выгодный и рациональный маршрут, минимизировав все затраты на перевозку. Экспедирование 
+                    включает в себя: построение логистической цепочки, подбор типа транспорта, доставку груза из точки 
+                    «А» в точку «Б» в точно обозначенный срок, учитываю специфику груза (он может быть опасным, негабаритным, 
+                    дорогостоящим, скоропортящимся и т.д).
+                  </p>
+                  <p>W razie pytań dotyczących naszej oferty prosimy o kontakt:</p>
+                  <p><b>tel. +48 725 814 031</b></p>
+                  <p><b>e-mail: info.agelar@gmail.com</b></p>
+                </div>
+              </div>
+
+            </div>
+
+            <div id="forwarding" class="tabcontent">
+              <div class="services-forwarding-cargo-wrapper">
+                <div class="services-forwarding-img"></div>
+
+                <div class="services-forwarding-cargo-text">
+                  <p>
+                    <b>Экспедирование</b> – это постоянный и жесткий контроль продвижения груза от Поставщика 
+                    (Продавца) к Заказчику (Покупателю). <p>Наши специалисты координируют все изменения в процессе
+                     перемещения груза, исходя из расчёта наибольшей эффективности. Они также могут использовать
+                      схему мультимодальных перевозок наших международных партнеров с использованием различных 
+                      видов транспорта. При этом Клиент всегда информируется обо всех изменениях, произошедших в маршруте, 
+                      и может узнать, в каком месте в данное время находится его груз. Транспортное экспедирование компании 
+                      <b> «Aгелар» </b> включает в себя также:</p> 
+                      <ul>
+                        <li>Расчет точек перегрузки товаров и складирования, а также расчет оптимальных 
+                      условий для хранения и перегрузки товара;</li>
+                        <li>Расчет условий загрузки и закрепления груза. Проверка закрепления груза;</li>
+                        <li>Подготовка маршрутной документации, её согласование; </li>
+                        <li>Обеспечение подвижным составом;</li>
+                        <li>Страхование груза;</li>
+                        <li>Контролируемая погрузка и выгрузка;</li>
+                        <li>Предоставление документарного закрытия перевозки, которое включает таможенные документы об экспорте/импорте/транзите, подтверждение получателя.</li>
+                      </ul>                     
+            
+                  </p>
+                  <p>W razie pytań dotyczących naszej oferty prosimy o kontakt:</p>
+                  <p><b>tel. +48 725 814 031</b></p>
+                  <p><b>e-mail: info.agelar@gmail.com</b></p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <hr />
+
+    <footer class="footer-wrapper">
+      <div class="footer">
+        <div class="footer-info container">
+          <div class="footer-info-top">
+            <div class="footer-info-top-child">
+              <div>
+                <p><b>AGELAR Sp.z.o.o.</b></p>
+              <p>ul. Stefana Okrzei 1A</p>
+              <p>lok. 10P 03-715</p>
+              <p>Warszawa, Poland</p>
+              </div>
+              <div>
+                  <p><b>Kontakt</b></p>
+              <p>tel. +48 725 814 031</p>
+              <p>e-mail: info.agelar@gmail.com</p>
+              </div>              
+            </div>           
+            <div class="footer-info-top-child">
+              <div class="footer-buttons">
+                <a title="Telegram" href="https://wa.me/1XXXXXXXXXX"><i class="fa-brands fa-telegram"></i></a>
+                <a title="Whatsapp" href="https://wa.me/293330278"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:info.agelar@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          
+          <div class="footer-info-bottom">
+            <p>2017-2022 ©Agelar. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+   
+    <div class="menu-mobile-wrapper">
+      <nav id="mobile-menu" class="menu">
+     
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+
+        <div class="menu-mobile-content">
+          <ul class="" role="menu" style="width: calc(100%+17px)">
+            <li class="menu-item" role="menuitem">
+              <a class="menu-link" href="./about.html">O firmie</a>
+            </li>
+            <li class="menu-item" role="menuitem">
+              <a class="menu-link" href="./services.html">Nasza oferta</a>
+            </li>
+            <li class="menu-item" role="menuitem">
+              <a class="menu-link" href="./contacts.html">Kontakt</a>
+            </li>
+            <li class="menu-item" role="menuitem">
+              <a class="menu-link" href="./documents.html">Dokumentacja</a>
+            </li>
+            <li class="menu-item" role="menuitem">
+              <a class="menu-link" href="#">Wycena transportu</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!--JS SCRIPTS-->
+    <script src="./js/services.js"></script>
+  </div>
+</body>
+
+</html>

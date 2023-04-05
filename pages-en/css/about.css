@@ -1,0 +1,109 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #233564;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.about-info-wrapper {
+  background-color: #2b5995;
+}
+
+.about-info {
+  display: flex;
+}
+
+.about-info-image {
+  background-image: url("../../images/Road.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25%;
+  position: relative;
+}
+
+.about-info-title {
+  background: linear-gradient(to right, #fff, transparent);
+  font-size: 40px;
+  font-weight: 500;
+  color: #2b5995;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: rotate(-90deg);
+  transform-origin: 23px 71%;
+  min-width: 500px;
+}
+
+.about-info-title p {
+  margin: 10px 50px;
+}
+
+
+.about-info-text {
+  font-size: 16px;
+  padding: 130px 50px 70px;
+  background-color: #fff;
+}
+
+.about-info-text p {
+  margin: 16px;
+}
+
+.about-info-text ul {
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+.about-info-text li {
+  line-height: 20px;
+  text-align: justify;
+}
+
+hr {
+  margin: 0px;
+}
+
+
+@media all and (max-width: 950px) {
+  .container {
+    max-width: 950px;
+  }
+}
+
+@media all and (max-width: 769px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media all and (max-width: 570px) {
+  .container {
+    max-width: 500px;
+  }
+
+  .about-info-image {
+    display: none;
+  }
+  .about-info-text {
+    font-size: 16px;
+    padding: 130px 20px 50px;
+    background-color: #fff;
+  }
+}
+
+@media all and (max-width: 376px) {
+  .container {
+    max-width: 376px;
+  }
+}

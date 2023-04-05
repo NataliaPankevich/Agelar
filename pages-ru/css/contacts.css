@@ -1,0 +1,126 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #233564;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contacts-wrapper {
+  padding: 150px 30px 0px;
+}
+
+.contacts {
+  min-height: 68vh;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.contacts-info {
+  padding: 0px 40px 0px 70px;
+}
+
+.contacts-info-title {
+  background: linear-gradient(to right, #2b5995, transparent);
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: rotate(-90deg);
+  transform-origin: 23px 78%;
+  min-width: 500px;
+}
+.contacts-info-title p {
+  margin: 10px 50px;
+}
+
+.contacts-map {
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 40%;
+  position: relative;
+  height: 0;
+}
+.contacts-map iframe {
+  border-radius: 3px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media all and (max-width: 1050px) {
+  .container {
+    max-width: 950px;
+  }
+  .contacts-wrapper {
+    padding: 120px 30px 0px;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .contacts-info {
+    padding: 0px 40px 0px 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contacts-map {
+    margin: 0 auto;
+    width: 85%;
+    height: 90%;
+    overflow: hidden;
+    padding-bottom: 40%;
+    position: relative;
+    height: 0;
+  }
+  .contacts-map iframe {
+    margin-left: 30px;
+    border-radius: 3px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .contacts-info-child {
+    max-width: 30%;   
+  }
+  .contacts-info-child p {
+    margin:1px;
+  }
+}
+
+@media all and (max-width: 769px) {
+  .container {
+    max-width: 768px;
+  }
+  .contacts-info-child p {
+    margin:3px;
+  }
+  .contacts-info {
+    flex-direction: column;    
+  }
+  .contacts-info-child {
+    max-width: 90%;   
+  }
+}

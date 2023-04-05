@@ -1,0 +1,87 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #233564;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.documents-wrapper {
+  padding: 150px 30px 0px;
+}
+
+.documents {
+  min-height: 59vh;
+  position: relative;
+  font-size: 16px; 
+}
+
+.documents-info {
+  padding: 0px 40px 0px 70px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.documents-info-title {
+  background: linear-gradient(to right, #2b5995, transparent);
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: rotate(-90deg);
+  transform-origin: 23px 68%;
+  min-width: 500px;
+}
+
+.documents-info-title p {
+  margin: 10px 50px;
+}
+
+.documents-info-child:last-child{
+  width: 30%;  
+}
+.documents-info-child p {
+  margin:1px;
+}
+
+.documents-info-child:nth-child(2) {  
+  max-width: 30%;  
+  text-align: justify; 
+  text-align: justify;
+  margin-right: 50px; 
+  text-indent: 30px;
+}
+
+hr {
+  margin: 0px;
+}
+
+@media all and (max-width: 950px) {
+  .container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media all and (max-width: 769px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

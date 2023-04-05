@@ -1,0 +1,187 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #233564;
+  box-sizing: border-box; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.services-wrapper {  
+  margin-top: 120px;
+  background-color: #2b5995;
+}
+
+.services-info {
+  position: relative;  
+}
+
+.services-info-title {
+  background: linear-gradient(to right, #fff, transparent);
+  font-size: 40px;
+  font-weight: 500;
+  color: #2b5995;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: rotate(-90deg);
+  transform-origin: 23px 65%;
+  min-width: 500px; 
+}
+.services-info-title p {
+  margin: 10px 50px;
+}
+
+.services-nav {
+  display: flex;  
+}
+
+.tablink {
+  background-color: #2b5995; 
+  color: white;  
+  border: 2px solid #fff;
+  outline: none;
+  cursor: pointer;
+  padding: 18px 16px;
+  font-size: 17px;
+  min-width:calc(100%/3);
+}
+
+.tablink:hover {
+  background-color: #9BDEDE;
+}
+
+.tabcontent {
+  color: #233564;
+  text-indent: 15px;
+  display: none;  
+  height: 100%;
+}
+
+#international-cargo, #groupage-cargo, #forwarding  {background-color: #fff;}
+
+.services-international-cargo-wrapper  {
+  display: flex; 
+}
+.services-international-cargo-img {
+  background-image: url("../../images/map.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 25%;  
+}
+
+.services-international-cargo-text {
+  padding: 30px 40px 30px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+}
+.services-international-cargo-text li {
+  margin: 7px 0px;
+}
+
+.services-groupage-cargo-wrapper  {
+  display: flex; 
+}
+
+.services-groupage-cargo-img {
+  background-image: url("../../images/gropage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 58vh; 
+  min-width: 25%;   
+}
+
+.services-groupage-cargo-text {
+  padding: 0px 35px 30px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.services-forwarding-cargo-wrapper  {
+  display: flex; 
+}
+
+.services-forwarding-img {
+  background-image: url("../../images/forwarding.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 25%; 
+  min-height: 500px;  
+}
+
+.services-forwarding-cargo-text { 
+  padding: 30px 35px 30px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+hr {
+  margin:0px;
+}  
+
+
+@media all and  (max-width:1000px){
+  .container {
+    max-width: 950px;
+  }
+  
+}
+
+@media all and  (max-width:767px){
+  .container {
+    max-width: 766px;  
+  } 
+  .services-info-title {
+    display: none;
+  }
+  .services-international-cargo-img, .services-groupage-cargo-img, .services-forwarding-img {
+    display: none;
+  }
+  .services-international-cargo-text {
+    padding: 20px 30px 15px 20px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  
+  .services-groupage-cargo-text {
+    padding: 0px 25px 20px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  
+  .services-forwarding-cargo-text {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 20px 25px 20px;
+  }
+}
+@media all and  (max-width:520px){
+  .container {
+    max-width: 375px;  
+  }
+
+  .services-nav {
+  display: flex;  
+  flex-direction: column;
+}
+}
+
+@media all and  (max-width:440px){
+  .container {
+    max-width: 375px;  
+  }
+}
+
